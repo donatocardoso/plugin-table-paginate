@@ -1,0 +1,28 @@
+body {
+    width: 500px;
+    height: auto;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    margin: auto;
+    background: #888;
+}
+
+table {
+    width: 100%;
+    margin: 50px auto;
+    border: 1px solid #000;
+}
+
+th, td {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+
+th {
+    background: #000;
+    color: #fff;
+}
+
+td {
+    border: 1px solid #000;
+}
