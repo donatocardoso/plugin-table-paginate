@@ -17,13 +17,13 @@ Version 1.0
 - And it is only necessary to call the PAGINATE function and, if necessary, pass the desired number of lines per page as parameters, by default there is 5 (five) rows:
 
   ```javascript
-  $("#tbTest").paginate();
+  $("#tbTest").paginate(5); // First parameter: Amount lines for page.
   ```
 
 
 - You can also choose which page the table will begin to display:
 
   ```javascript
-  $("#tbTest").paginate(5, 2);
+  $("#tbTest").paginate(5, 2); // Second parameter: Page that will be displayed.
   ```
      
