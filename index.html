@@ -12,32 +12,38 @@
         <script type="text/javascript" src="main.js"></script>
 
         <script type="text/javascript">
-            $(document).ready(function () {
-                $("#tbTeste").paginate(5);
-            });
+            function executePaginate() {
+                let numLines = $("#numLines").val() ? $("#numLines").val() : 5;
+                $("#tbTest").paginate(numLines);
+            }
+
+            $(document).ready(executePaginate);
         </script>
     </head>
     <body>
         
-        <table id="tbTeste" cellspacing="0">
+        <table id="tbTest" cellspacing="0">
             <thead>
                 <tr>
-                    <th>Coluna 1</th>
-                    <th>Coluna 2</th>
-                    <th>Coluna 3</th>
-                    <th>Coluna 4</th>
-                    <th>Coluna 5</th>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                    <th>Column 5</th>
                 </tr>
             </thead>
             <tbody>
                 <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-                <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
-                <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
                 <tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
-                <tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
-                <tr><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr>
+                <tr><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr>
+                <tr><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr>
+                <tr><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td></tr>
+                <tr><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td></tr>
             </tbody>
         </table>
 
+        <label for="numLines">Please enter a quantity of lines per page:</label>
+        <input id="numLines" value="1" type="number" max="6" style="width: 30px;" />
+        <input value="Test" type="button" onclick="executePaginate();" />
     </body>
 </html>
