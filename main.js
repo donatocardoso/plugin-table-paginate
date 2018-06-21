@@ -1,6 +1,6 @@
 
 (function ($) {
-    $.fn.paginate = function (amountLines, page = 1) {
+    $.fn.paginate = function (amountLines = 5, page = 1) {
 
         if(!this.find("tfoot").length) {
             let functionPrevious = '$("#tbTeste").paginate(' + amountLines + ', ' + (page > 1 ? page - 1 : page) + ')';
