@@ -4,13 +4,14 @@ body {
     font-family: 'Segoe UI';
     font-size: 14px;
     margin: auto;
-    background: #888;
+    background: darkgrey;
 }
 
 table {
     width: 100%;
     margin: 50px auto;
-    border: 1px solid #000;
+    border: 1px solid black;
+    background: white;
 }
 
 th, td {
@@ -18,11 +19,29 @@ th, td {
     margin: 0 5px;
 }
 
-th {
-    background: #000;
-    color: #fff;
+th, tfoot {
+    background: black;
+    color: white;
 }
 
 td {
-    border: 1px solid #000;
+    border: 1px solid black;
+}
+
+tfoot td {
+    text-align: right;
+}
+
+.controlsTFOOT {
+    border: none;
+    background: black;
+    color: white;
+}
+
+input[type='button'].controlsTFOOT {
+    cursor: pointer;
+}
+
+input[type='button'].controlsTFOOT:hover {
+    color: aqua;
 }
