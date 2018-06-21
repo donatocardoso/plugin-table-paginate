@@ -12,12 +12,14 @@
         <script type="text/javascript" src="main.js"></script>
 
         <script type="text/javascript">
+
             function executePaginate() {
                 let numLines = $("#numLines").val() ? $("#numLines").val() : 5;
                 $("#tbTest").paginate(numLines);
             }
 
             $(document).ready(executePaginate);
+            
         </script>
     </head>
     <body>
